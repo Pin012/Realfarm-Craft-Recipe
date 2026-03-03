@@ -1,0 +1,5 @@
+{
+  "name": "Realfarm Craft Recipes",
+  "description": "A static recipe system for the mobile game Realfarm Craft, featuring Excel data import and search capabilities.",
+  "requestFramePermissions": []
+}
