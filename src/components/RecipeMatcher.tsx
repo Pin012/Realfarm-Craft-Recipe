@@ -121,7 +121,7 @@ export function RecipeMatcher({ recipes }: RecipeMatcherProps) {
             食材找食譜
           </h2>
           <p className="text-sm text-stone-500 ml-8">
-            不知道今天要煮什麼嗎？<br />輸入手邊現有的食材，讓我們幫您找出可以製作的料理，並自動計算還缺少哪些材料！
+            不知道今天要煮什麼嗎？輸入手邊現有的食材，讓我們幫您找出可以製作的料理，並自動計算還缺少哪些材料！
           </p>
         </div>
 
@@ -146,14 +146,22 @@ export function RecipeMatcher({ recipes }: RecipeMatcherProps) {
               </div>
               
               <div className="w-[80px] relative">
-                <input
-                  type="number"
-                  min="1"
-                  max="99"
+                <select
                   value={ing.amount}
                   onChange={(e) => handleUpdateIngredient(ing.id, 'amount', parseInt(e.target.value) || 1)}
-                  className="w-full px-4 py-2 bg-stone-50 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#788e82]/50 transition-all text-center"
-                />
+                  className="w-full px-3 py-2 bg-stone-50 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#788e82]/50 transition-all text-center appearance-none cursor-pointer"
+                >
+                  {[...Array(20)].map((_, i) => (
+                    <option key={i + 1} value={i + 1}>
+                      {i + 1}
+                    </option>
+                  ))}
+                </select>
+                <div className="absolute inset-y-0 right-2 flex items-center pointer-events-none text-stone-400">
+                  <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                    <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                  </svg>
+                </div>
               </div>
 
               <button
