@@ -115,10 +115,15 @@ export function RecipeMatcher({ recipes }: RecipeMatcherProps) {
   return (
     <div className="max-w-4xl mx-auto p-4 space-y-8 animate-in fade-in duration-500">
       <div className="bg-white rounded-2xl shadow-sm border border-stone-200 p-6">
-        <h2 className="text-xl font-bold text-stone-800 mb-6 flex items-center gap-2">
-          <ChefHat className="w-6 h-6 text-[#788e82]" />
-          食材找食譜
-        </h2>
+        <div className="mb-6">
+          <h2 className="text-xl font-bold text-stone-800 flex items-center gap-2 mb-1">
+            <ChefHat className="w-6 h-6 text-[#788e82]" />
+            食材找食譜
+          </h2>
+          <p className="text-sm text-stone-500 ml-8">
+            不知道今天要煮什麼嗎？<br />輸入手邊現有的食材，讓我們幫您找出可以製作的料理，並自動計算還缺少哪些材料！
+          </p>
+        </div>
 
         <div className="space-y-4">
           <div className="flex gap-4 text-sm font-medium text-stone-500">
