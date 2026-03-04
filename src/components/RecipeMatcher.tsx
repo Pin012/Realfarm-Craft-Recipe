@@ -106,9 +106,9 @@ export function RecipeMatcher({ recipes }: RecipeMatcherProps) {
   };
 
   const getItemBackgroundClass = (name: string) => {
-    if (name.includes('美味')) return 'bg-green-100 border-green-200';
-    if (name.includes('優質')) return 'bg-blue-100 border-blue-200';
-    if (name.includes('特製')) return 'bg-purple-100 border-purple-200';
+    if (name.includes('美味')) return 'bg-emerald-100';
+    if (name.includes('優質')) return 'bg-sky-100';
+    if (name.includes('特製')) return 'bg-purple-100';
     return 'bg-stone-100 border-stone-100';
   };
 
