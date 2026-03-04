@@ -83,9 +83,9 @@ export default function App() {
   }, [selectedMainCategory]);
 
   const getItemBackgroundClass = (name: string) => {
-    if (name.includes('美味')) return 'bg-[#e7f1ec] border-[#e7f1ec]';
-    if (name.includes('優質')) return 'bg-sky-100 border-sky-100';
-    if (name.includes('特製')) return 'bg-purple-100 border-purple-100';
+    if (name.includes('美味')) return 'bg-[#cae49f] border-[#cae49f]';
+    if (name.includes('優質')) return 'bg-[#b6d1e8] border-[#b6d1e8]';
+    if (name.includes('特製')) return 'bg-[#d3bee6] border-[#d3bee6]';
     return 'bg-stone-100 border-stone-100';
   };
 
