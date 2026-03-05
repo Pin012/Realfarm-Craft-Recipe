@@ -75,7 +75,7 @@ export const parseExcelData = (csvText: string): Recipe[] => {
   return recipes;
 };
 
-// Sample data based on the user's screenshot
+
 export const SAMPLE_DATA_TEXT = `烘焙坊	分類		
 	酵種	小麥酵種	水x10	天然酵母x5	高筋麵粉x10
 		全麥酵種	水x10	天然酵母x5	全麥粉x10

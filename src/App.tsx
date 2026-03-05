@@ -424,7 +424,7 @@ export default function App() {
                       </div>
                     )}
                   </div>
-                  <h3 className="font-medium text-[10px] leading-tight text-stone-800 text-center line-clamp-2 w-full px-0.5 tracking-tight">{recipe.name}</h3>
+                  <h3 className="font-medium text-[9px] leading-tight text-stone-800 text-center line-clamp-2 w-full px-0.5 tracking-tight">{recipe.name}</h3>
                 </div>
               )}
             </div>
