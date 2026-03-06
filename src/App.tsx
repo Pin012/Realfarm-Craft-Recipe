@@ -84,7 +84,7 @@ export default function App() {
   // Reset subcategory when main category changes
   useEffect(() => {
     setActiveSubCategory(null);
-    setIsSubCategoryOpen(true);
+    setIsSubCategoryOpen(false);
   }, [selectedMainCategory]);
 
   const getItemBackgroundClass = (name: string) => {
