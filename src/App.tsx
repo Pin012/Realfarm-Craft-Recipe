@@ -352,10 +352,7 @@ export default function App() {
                       <img 
                         src={recipe.image || `/images/${recipe.name}.png`}
                         alt={recipe.name}
-                        className={cn(
-                          "w-full h-full object-cover",
-                          viewMode === "silhouette" && "brightness-0 contrast-200"
-                        )}
+                        className="w-full h-full object-cover"
                         onError={(e) => {
                           e.currentTarget.style.display = 'none';
                           e.currentTarget.parentElement?.querySelector('.placeholder-icon')?.classList.remove('hidden');
@@ -412,7 +409,10 @@ export default function App() {
                     <img 
                       src={recipe.image || `/images/${recipe.name}.png`}
                       alt={recipe.name}
-                      className="w-full h-full object-cover"
+                      className={cn(
+                        "w-full h-full object-cover",
+                        viewMode === "silhouette" && "brightness-0 contrast-200"
+                      )}
                       onError={(e) => {
                         e.currentTarget.style.display = 'none';
                         e.currentTarget.parentElement?.querySelector('.placeholder-icon')?.classList.remove('hidden');
