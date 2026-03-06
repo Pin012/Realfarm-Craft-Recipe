@@ -11,12 +11,17 @@ export default function App() {
   const [selectedMainCategory, setSelectedMainCategory] = useState<string>('All');
   const [activeSubCategory, setActiveSubCategory] = useState<string | null>(null);
   const [isSubCategoryOpen, setIsSubCategoryOpen] = useState(false);
-  const [viewMode, setViewMode] = useState<'card' | 'thumbnail'>('card');
+  const [viewMode, setViewMode] = useState<'card' | 'thumbnail' | 'silhouette'>('card');
   const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
   const [pinnedRecipes, setPinnedRecipes] = useState<string[]>([]);
   const [showPinnedView, setShowPinnedView] = useState(false);
   const [currentTab, setCurrentTab] = useState<'browse' | 'matcher'>('browse');
   const [isMainCategoryOpen, setIsMainCategoryOpen] = useState(true);
+  const cycleViewMode = () => {
+    if (viewMode === 'card') setViewMode('thumbnail');
+    else if (viewMode === 'thumbnail') setViewMode('silhouette');
+    else setViewMode('card');
+  };
 
   // Load initial data
   useEffect(() => {
@@ -347,7 +352,10 @@ export default function App() {
                       <img 
                         src={recipe.image || `/images/${recipe.name}.png`}
                         alt={recipe.name}
-                        className="w-full h-full object-cover"
+                        className={cn(
+                          "w-full h-full object-cover",
+                          viewMode === "silhouette" && "brightness-0 contrast-200"
+                        )}
                         onError={(e) => {
                           e.currentTarget.style.display = 'none';
                           e.currentTarget.parentElement?.querySelector('.placeholder-icon')?.classList.remove('hidden');
@@ -623,13 +631,19 @@ export default function App() {
       {/* Floating Action Button for View Toggle */}
       {currentTab === 'browse' && (
         <button
-          onClick={() => setViewMode(viewMode === 'card' ? 'thumbnail' : 'card')}
+          onClick={cycleViewMode}
           className="fixed bottom-6 right-6 p-4 bg-[#788e82] text-white rounded-full shadow-lg hover:bg-[#657a6e] transition-all hover:scale-105 active:scale-95 z-40"
-          title={viewMode === 'card' ? "切換至縮圖檢視" : "切換至卡片檢視"}
+          title={viewMode === 'card' ? "縮圖模式" : viewMode === 'thumbnail' ? "剪影模式" : "卡片模式"}
         >
-          {viewMode === 'card' ? (
+          {viewMode === 'card' && (
             <ImageIcon className="w-6 h-6" />
-          ) : (
+          )}
+
+          {viewMode === 'thumbnail' && (
+            <Layers className="w-6 h-6" />
+          )}
+
+          {viewMode === 'silhouette' && (
             <LayoutGrid className="w-6 h-6" />
           )}
         </button>
