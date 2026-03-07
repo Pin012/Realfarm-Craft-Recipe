@@ -632,11 +632,11 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 py-8 text-center text-sm text-stone-500 space-y-2">
 
           <div className="font-semibold text-stone-600">
-            - Realfarm Craft Recipe Helper -
+            🌾Realfarm Craft Recipe Helper
           </div>
 
           <div className="text-xs">
-            開發者遊戲 ID │ 迷路小麥 🌾
+            開發者遊戲 ID：迷路小麥
           </div>
 
           <div className="flex justify-center gap-6 text-xs pt-1">
@@ -658,7 +658,7 @@ export default function App() {
             </a>
 
             <span className="text-stone-400">
-              v1.0
+              v1.0.0
             </span>
 
           </div>
