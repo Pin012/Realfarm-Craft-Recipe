@@ -657,7 +657,7 @@ export default function App() {
               回報問題
             </a>
 
-            <span className="text-stone-400">
+            <span>
               v1.0.0
             </span>
 
