@@ -632,7 +632,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 py-8 text-center text-sm text-stone-500 space-y-2">
 
           <div className="font-semibold text-stone-600">
-            🌾Realfarm Craft Recipe Helper
+            🌾 Realfarm Craft Recipe Helper
           </div>
 
           <div className="text-xs">
