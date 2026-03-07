@@ -631,7 +631,7 @@ export default function App() {
       <footer className="mt-16 border-t border-stone-200 bg-white/70 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 py-8 text-center text-sm text-stone-500 space-y-2">
 
-          <div className="font-semibold text-stone-600">
+          <div className="font-semibold text-stone-600 mb-4">
             🌾 Realfarm Craft Recipe Helper
           </div>
 
