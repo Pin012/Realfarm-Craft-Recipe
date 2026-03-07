@@ -113,7 +113,7 @@ export default function App() {
           <div className="flex flex-col md:grid md:grid-cols-3 items-center gap-3">
             <div className="flex items-center gap-2 self-start md:justify-self-start">
               <ChefHat className="w-6 h-6 drop-shadow-md text-emerald-50" />
-              <h1 className="text-xl font-bold tracking-tight drop-shadow-md text-white">Realfarm Craft</h1>
+              <h1 className="text-xl font-bold tracking-tight drop-shadow-md text-white">Realfarm Craft Helper</h1>
             </div>
 
             {/* App Mode Navigation */}
@@ -631,15 +631,15 @@ export default function App() {
       <footer className="mt-16 border-t border-stone-200 bg-white/70 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 py-8 text-center text-sm text-stone-500 space-y-2">
 
-          <div className="font-semibold text-stone-600 mb-8">
-            🌾 Realfarm Craft Recipe Helper
+          <div className="font-semibold text-[#6c8075] mb-6">
+            Realfarm Craft Recipe Helper
           </div>
 
-          <div className="text-xs">
+          <div className="text-xs text-[#84988d]">
             開發者遊戲 ID：迷路小麥
           </div>
 
-          <div className="flex justify-center gap-6 text-xs pt-1">
+          <div className="flex justify-center gap-6 text-xs pt-1  text-[#84988d]">
 
             <a
               href="https://github.com/Pin012/Realfarm-Craft-Recipe"
