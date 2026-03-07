@@ -628,6 +628,45 @@ export default function App() {
         )}
       </main>
 
+      <footer className="mt-16 border-t border-stone-200 bg-white/70 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-4 py-8 text-center text-sm text-stone-500 space-y-2">
+
+          <div className="font-semibold text-stone-600">
+            🌾 Realfarm Craft Recipe Helper
+          </div>
+
+          <div className="text-xs">
+            開發者遊戲 ID：迷路小麥
+          </div>
+
+          <div className="flex justify-center gap-6 text-xs pt-1">
+
+            <a
+              href="https://github.com/Pin012/Realfarm-Craft-Recipe"
+              target="_blank"
+              className="hover:text-stone-700 transition-colors"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://github.com/Pin012/Realfarm-Craft-Recipe/issues"
+              target="_blank"
+              className="hover:text-stone-700 transition-colors"
+            >
+              回報問題
+            </a>
+
+            <span className="text-stone-400">
+              v1.0
+            </span>
+
+          </div>
+
+        </div>
+      </footer>
+
+
       {/* Floating Action Button for View Toggle */}
       {currentTab === 'browse' && (
         <button
