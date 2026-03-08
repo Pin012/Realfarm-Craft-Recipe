@@ -106,8 +106,8 @@ export function RecipeMatcher({ recipes }: RecipeMatcherProps) {
   };
 
   const getItemBackgroundClass = (name: string) => {
-    if (name.includes('美味')) return 'bg-[#e8f3d5] border-[#e8f3d5]';
-    if (name.includes('優質') || name.includes('超優') || name.includes('香濃') || name.includes('高麗菜火腿沙拉')) return 'bg-[#d9e7f3] border-[#d9e7f3]';
+    if (name.includes('美味') || name.includes('香濃') || name.includes('高麗菜火腿沙拉')) return 'bg-[#e8f3d5] border-[#e8f3d5]';
+    if (name.includes('優質') || name.includes('超優')) return 'bg-[#d9e7f3] border-[#d9e7f3]';
     if (name.includes('特製')) return 'bg-[#e6dcf0] border-[#e6dcf0]';
     return 'bg-stone-100 border-stone-100';
   };
