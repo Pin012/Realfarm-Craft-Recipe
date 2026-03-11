@@ -1,20 +1,66 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Realfarm Craft - 食譜管理與食材比對工具
 
-# Run and deploy your AI Studio app
+這是一個專為《真實農場 Realfarm》玩家設計的食譜工具，旨在幫助玩家更有效率地管理食譜、查詢配方，並透過現有食材快速比對可製作的項目。
 
-This contains everything you need to run your app locally.
+## 🌟 核心功能
 
-View your app in AI Studio: https://ai.studio/apps/f726ce66-5317-486f-ac91-0b0c46c90594
+### 1. 食譜瀏覽與搜尋
+- **多層級分類**：支援主類別（如：烘焙坊、飲料）與子類別（如：吐司、拿鐵）的過濾。
+- **快速搜尋**：可透過食譜名稱或食材關鍵字即時搜尋。
+- **雙檢視模式**：提供詳細的「卡片模式」與精簡的「縮圖模式」，適應不同螢幕尺寸與使用習慣。
 
-## Run Locally
+### 2. 食材找食譜 (Recipe Matcher)
+- **庫存比對**：輸入您手邊擁有的食材與數量，系統會自動計算出您可以製作哪些食譜。
+- **缺料提示**：清晰標示出製作特定食譜還缺少哪些材料及其具體份量。
+- **智慧排序**：優先顯示達成率高或可直接製作的食譜。
 
-**Prerequisites:**  Node.js
+### 3. 釘選功能
+- **快速存取**：將常用的食譜釘選，隨時透過懸浮按鈕快速查看所需材料，無需反覆搜尋。
+- **跨頁面同步**：釘選狀態在瀏覽頁面與比對頁面間保持同步。
 
+### 4. 行動裝置優化
+- **響應式設計**：針對手機版進行深度優化，包含下拉式選單、摺疊式分類與觸控友善的介面。
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🛠️ 技術棧
+
+- **前端框架**: React 19
+- **樣式處理**: Tailwind CSS 4
+- **圖標庫**: Lucide React
+- **動畫效果**: Motion (Framer Motion)
+- **資料解析**: PapaParse (CSV/TSV 解析)
+- **開發工具**: Vite
+
+## 🚀 快速開始
+
+### 安裝依賴
+```bash
+npm install
+```
+
+### 啟動開發伺服器
+```bash
+npm run dev
+```
+
+### 建立生產版本
+```bash
+npm run build
+```
+
+## 📊 資料格式說明
+
+本專案支援透過特定格式的文字進行資料解析。資料結構如下：
+- **第一欄**：主類別
+- **第二欄**：子類別
+- **第三欄**：食譜名稱
+- **後續欄位**：食材名稱與數量（格式如 `食材x數量` 或 `食材*數量`）
+
+範例：
+```text
+烘焙坊	分類		
+	吐司	美味吐司	高筋麵粉x2	乾酵母x1	水x1	鹽x1	白糖x1
+```
+
+## 📝 授權
+
+本專案採用 MIT 授權。
