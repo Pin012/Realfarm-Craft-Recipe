@@ -632,13 +632,22 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 py-8 text-sm text-stone-500">
       
           {/* 開發者資訊 */}
-          <div className="flex flex-col items-center md:flex-row md:justify-between md:items-center">
-      
-            <div className="inline-block text-left space-y-1 text-[#84988d] text-xs">
-              <div>系統開發者｜迷路小麥</div>
-              <div>食譜開發者｜帥哥</div>
+          <div className="flex flex-col items-center md:flex-row md:justify-between">
+          
+            {/* 手機 */}
+            <div className="inline-block text-left text-xs text-[#84988d] md:inline md:text-left">
+              <span className="md:hidden">
+                <div>系統開發者｜迷路小麥</div>
+                <div>食譜開發者｜帥哥</div>
+              </span>
+          
+              {/* 桌機 */}
+              <span className="hidden md:flex w-full justify-between">
+                <span>系統開發者｜迷路小麥</span>
+                <span>食譜開發者｜帥哥</span>
+              </span>
             </div>
-      
+          
           </div>
       
           <div className="flex justify-center gap-6 text-xs pt-4 text-[#84988d]">
