@@ -636,14 +636,14 @@ export default function App() {
           
             {/* 手機版 */}
             <div className="inline-block text-left space-y-1 md:hidden">
-              <div>系統開發者｜迷路小麥</div>
-              <div>食譜開發者｜帥哥</div>
+              <div>系統開發｜迷路小麥</div>
+              <div>食譜開發｜帥哥</div>
             </div>
           
             {/* 桌機版 */}
             <div className="hidden md:flex justify-center items-center gap-8">
-              <span>系統開發者｜迷路小麥</span>
-              <span>食譜開發者｜帥哥</span>
+              <span>系統開發｜迷路小麥</span>
+              <span>食譜開發｜帥哥</span>
             </div>
           
           </div>
