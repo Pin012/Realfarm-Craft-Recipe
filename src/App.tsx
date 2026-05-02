@@ -629,14 +629,19 @@ export default function App() {
       </main>
 
       <footer className="mt-16 border-t border-stone-200 bg-white/70 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-4 py-8 text-center text-sm text-stone-500 space-y-2">
-
-          <div className="text-xs text-[#84988d]">
-            開發者遊戲 ID：迷路小麥
+        <div className="max-w-7xl mx-auto px-4 py-8 text-sm text-stone-500">
+      
+          {/* 開發者資訊 */}
+          <div className="flex flex-col items-center md:flex-row md:justify-between md:items-center">
+      
+            <div className="inline-block text-left space-y-1 text-[#84988d] text-xs">
+              <div>系統開發者｜迷路小麥</div>
+              <div>食譜開發者｜帥哥</div>
+            </div>
+      
           </div>
-
-          <div className="flex justify-center gap-6 text-xs pt-1  text-[#84988d]">
-
+      
+          <div className="flex justify-center gap-6 text-xs pt-4 text-[#84988d]">
             <a
               href="https://github.com/Pin012/Realfarm-Craft-Recipe"
               target="_blank"
@@ -644,11 +649,9 @@ export default function App() {
             >
               GitHub
             </a>
-
-            <span>
-              v1.0.0
-            </span>
-
+      
+            <span>v1.0.0</span>
+      
             <a
               href="https://github.com/Pin012/Realfarm-Craft-Recipe/issues"
               target="_blank"
@@ -656,9 +659,8 @@ export default function App() {
             >
               回報問題
             </a>
-
           </div>
-
+      
         </div>
       </footer>
 
