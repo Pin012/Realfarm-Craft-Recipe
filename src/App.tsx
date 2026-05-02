@@ -641,14 +641,14 @@ export default function App() {
             </div>
           
             {/* 桌機版 */}
-            <div className="hidden md:flex justify-center items-center gap-16">
+            <div className="hidden md:flex justify-center items-center gap-8">
               <span>系統開發者｜迷路小麥</span>
               <span>食譜開發者｜帥哥</span>
             </div>
           
           </div>
       
-          <div className="flex justify-center gap-6 text-xs pt-4 text-[#84988d]">
+          <div className="flex justify-center gap-6 text-xs pt-8 text-[#84988d]">
             <a
               href="https://github.com/Pin012/Realfarm-Craft-Recipe"
               target="_blank"
