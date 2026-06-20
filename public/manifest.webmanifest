@@ -1,7 +1,7 @@
 {
   "name": "Realfarm Craft Helper",
-  "short_name": "Realfarm",
-  "description": "Realfarm craft recipe helper",
+  "short_name": "RFC Helper",
+  "description": "Realfarm craft helper",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
