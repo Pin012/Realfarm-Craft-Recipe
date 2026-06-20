@@ -657,8 +657,6 @@ export default function App() {
               GitHub
             </a>
       
-            <span>v1.0.0</span>
-      
             <a
               href="https://github.com/Pin012/Realfarm-Craft-Recipe/issues"
               target="_blank"
